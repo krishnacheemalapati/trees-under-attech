@@ -7,6 +7,6 @@ def home():
     return render_template('index.html', title='Home')
 
 @app.route('/anylink')
-def anylink():
+    def anylink():
     pass
 
