@@ -57,7 +57,17 @@ time, mark, audio, video {
    vertical-align: baseline;
    background: transparent;
 }
-
+#map {
+   height: 400px; /* The height is 400 pixels */
+   width: 100%; /* The width is the width of the web page */
+ }
+#amazing {
+   position: absolute;
+   display: inline-flex;
+   opacity: 100%;
+   width: 110%;
+   margin-left: -15%;
+}
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
    display: block;
@@ -94,6 +104,42 @@ q:before, q:after {
    content: '';
    content: none;
 }
+
+.place-card.place-card-large{
+   display: none!important;;
+}
+
+form.example input[type=text] {
+   padding: 10px;
+   font-size: 17px;
+   border: 1px solid grey;
+   float: left;
+   width: 80%;
+   background: #f1f1f1;
+ }
+ 
+ form.example button {
+   display: inline-flex;
+   float: left;
+   width: 20%;
+   padding: 10px;
+   background: #2196F3;
+   color: white;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-left: none;
+   cursor: pointer;
+ }
+ 
+ form.example button:hover {
+   background: #0b7dda;
+ }
+ 
+ form.example::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
 
 ins {
    background-color: #ff9;
@@ -596,6 +642,7 @@ input[type="checkbox"] { display: inline; }
    width: 96%;
    max-width: 1020px;
    margin: 0 auto;
+   z-index: 10;
 }
 /* fixed width for IE8 */
 .ie .row { width: 1000px ; }

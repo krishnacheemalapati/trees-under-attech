@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
+import hero from "./hero.svg";
 import Fade from "react-reveal";
 
 class Header extends Component {
@@ -13,8 +13,6 @@ class Header extends Component {
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
-
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
@@ -31,20 +29,20 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#about">
-                About
-              </a>
-            </li>
-
-            <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                Discover
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                Product
+              </a>
+            </li>
+
+            <li>
+              <a className="smoothscroll" href="#impact">
+                Impact
               </a>
             </li>
 
@@ -55,23 +53,23 @@ class Header extends Component {
             </li>
           </ul>
         </nav>
-
+        <img id="amazing" src = {hero} alt="Spirit animal in the shape of a deer standing alone in a mystical forest" />
         <div className="row banner">
           <div className="banner-text">
             <Fade bottom>
-              <h1 className="responsive-headline">{name}</h1>
+              <h1 className="responsive-headline">{"Trees Under AtTech!"}</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <h3>{"Deforestation is the greatest threat to our battle against climate change."}</h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
                 <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
+                  <i className="fa fa-book"></i>Learn More
                 </a>
                 <a href={github} className="button btn github-btn">
-                  <i className="fa fa-github"></i>Github
+                  <i className="fa fa-github"></i>View Code
                 </a>
               </ul>
             </Fade>

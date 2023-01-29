@@ -24,15 +24,27 @@ class Portfolio extends Component {
       <section id="portfolio">
         <Fade left duration={1000} distance="40px">
           <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
+            <div style={{ width: "100%" }}>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
+              <form class="example" action="action_page.php"/>
+                <input type="text" placeholder="Search.." name="search"/>
+                <button id = "cool" type="submit"><i class="fa fa-search"></i></button>
+              <form/>
+              <iframe
+                title="oihwriowherio"
+                width="100%"
+                height="600"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Link%20Rd,%20Droughill,%20Portarlington,%20Co.%20Laois,%20R32%20AE68,%20Ireland+(My%20Business%20Name)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               >
-                {projects}
-              </div>
+                <a href="https://www.maps.ie/distance-area-calculator.html">
+                  measure acres/hectares on map
+                </a>
+              </iframe>
             </div>
           </div>
         </Fade>
